@@ -1,0 +1,144 @@
+
+/*
+	style.css
+	External stylesheet for Classic Spaghetti Bolognese
+	- Uses Grid/Flexbox for layout
+	- Typography, colors, spacing, hover effects
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Reset / base */
+* { 
+    box-sizing: 
+    border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	background: #fcd8ad;
+	color: #333333;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Page container */
+.container {
+	max-width: 1100px;
+	margin: 32px auto;
+	padding: 20px;
+    padding-bottom: 32px;
+}
+
+/* Header */
+.site-header {
+	background: linear-gradient(135deg, #f6e8df 0%, #f0d7c8 100%);
+	padding: 32px;
+	border-radius: 8px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.site-header h1 {
+	font-family: 'Lora', Georgia, serif;
+	font-size: 32px;
+	color: #7a2b1d;
+	margin-bottom: 8px;
+	font-style: italic;
+}
+.site-header p {
+	color: #5a3b31;
+}
+
+/* Images section: responsive flexbox */
+#images {
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 16px;
+}
+#images img {
+	border-radius: 6px;
+	/* box-shadow: 0 4px 12px rgba(0,0,0,0.08); */
+	width: 48%;
+	max-width: 400px;
+	height: auto;
+	transition: transform .22s ease, box-shadow .22s ease;
+}
+#images img:hover {
+	transform: translateY(-4px) scale(1.02);
+}
+
+/* Generic section styling */
+section {
+	background: #ffffff;
+	padding: 16px;
+	border-radius: 8px;
+	margin-bottom: 16px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+section h2 {
+	color: #7a2b1d;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+/* Lists */
+#details ul, #nutrition ul, #ingredients ul { list-style: none; padding-left: 0; }
+#ingredients ul li, #details ul li, #nutrition ul li { padding: 4px 0; }
+
+/* Two-column layout for ingredients + instructions */
+.two-col { display: block; }
+@media (min-width: 800px) {
+	.two-col { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        gap: 1rem; 
+        align-items: start; 
+    }
+}
+
+#instructions ol { 
+    padding-left: 20px; 
+    line-height: 1.6; 
+}
+#instructions ol li { 
+    margin-bottom: 8px; 
+}
+
+/* Highlight / Tips */
+#tips mark { 
+    background: #fff0b8; 
+    padding: 4px; 
+    border-radius: 3px; 
+}
+
+/* Styling details */
+#ingredients { border-left: 4px solid #f1c6b5; }
+
+/* Links and footer */
+a { 
+    color: #a33a2b; 
+    text-decoration: none; 
+    transition: color .15s ease; 
+}
+a:hover { 
+    color: #7a2b1d; 
+    text-decoration: underline; 
+}
+footer { 
+    text-align: center; 
+    font-size: 15px; 
+    color: #6b5b54; 
+    margin-top: 8px; 
+}
+
+/* Accessibility focus */
+a:focus, button:focus { 
+    outline: 3px solid #ffd4c9; 
+    outline-offset: 2px; 
+}
+
+

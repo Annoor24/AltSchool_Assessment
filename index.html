@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic Spaghetti Bolognese Recipe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <body>
+    <main class="container">
 
-    <header>
+    <header class="site-header">
         <h1><em>Classic Spaghetti Bolognese</em></h1>
         <p>
-            A rich, flavorful Italian pasta dish made with minced beef, tomatoes, and herbs. 
+            A rich, flavorful Italian pasta dish made with minced beef, tomatoes, and herbs.
             Perfect for family dinners and special occasions.
         </p>
     </header>
 
     <!-- RECIPE DETAILS -->
-    <section>
+    <section id="details">
         <h2><u>Recipe Details</u></h2>
         <ul>
             <li><strong>Prep Time:</strong> 15 minutes</li>
@@ -28,18 +29,19 @@
     </section>
 
     <!-- IMAGE SECTION -->
-    <section>
-        <h2><u>Dish Image</u></h2>
-        <img src="./assets/Spag 1.jpg"
-             alt="A plate of spaghetti bolognese" 
-             width="400" height="300">
-        <img src="./assets/Spag 2.jpg"
-             alt="A plate of spaghetti bolognese" 
-             width="400" height="300">
-    </section>
+        <section id="images">
+           <h2><u>Dish Image</u></h2>
+           <img src="./assets/Spag 1.jpg"
+               alt="A plate of spaghetti bolognese" 
+               width="400" height="300">
+           <img src="./assets/Spag 2.jpg"
+               alt="A plate of spaghetti bolognese" 
+               width="400" height="300">
+        </section>
 
     <!-- INGREDIENTS -->
-    <section>
+    <div class="two-col">
+    <section id="ingredients">
         <h2><u>Ingredients</u></h2>
         <ul>
             <li>200g spaghetti</li>
@@ -54,7 +56,7 @@
     </section>
 
     <!-- INSTRUCTIONS -->
-    <section>
+    <section id="instructions">
         <h2><u>Instructions</u></h2>
         <ol>
             <li>Heat oil in a pan and sauté onions until soft.</li>
@@ -65,16 +67,17 @@
             <li>Serve spaghetti topped with the sauce and enjoy!</li>
         </ol>
     </section>
+    </div>
 
     <!-- TIPS SECTION -->
-    <section>
+    <section id="tips">
         <h2><u>Tips</u></h2>
         <p>
             For extra flavor, add a splash of <mark>red wine</mark> while simmering the sauce.
         </p>
     </section>
 
-    <section>
+    <section id="nutrition">
         <h2><u>Nutrition Facts (Per Serving)</u></h2>
         <ul>
             <li>Calories: 450</li>
@@ -91,5 +94,6 @@
         </p>
     </footer>
 
+    </main>
 </body>
 </html>
