@@ -9,12 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
 
 /* Reset / base */
-* { 
-    box-sizing: 
-    border-box; 
-    margin: 0; 
-    padding: 0; 
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
 	font-family: 'Open Sans', Arial, sans-serif;
@@ -133,6 +128,19 @@ footer {
     font-size: 15px; 
     color: #6b5b54; 
     margin-top: 8px; 
+}
+
+/* Mobile: stack images and ensure full-width on small viewports */
+@media (max-width: 799px) {
+	#images {
+		gap: 12px;
+		padding: 0;
+	}
+	#images img {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
 }
 
 /* Accessibility focus */
